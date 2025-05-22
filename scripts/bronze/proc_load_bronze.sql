@@ -35,7 +35,7 @@ BEGIN
 		TRUNCATE TABLE bronze.crm_cust_info;
 		PRINT '>> Insert Into : bronze.crm_cust_info'
 		BULK insert bronze.crm_cust_info
-		FROM 'E:\latihan\SQL\datawarehouse\datasets\source_crm\cust_info.csv'
+		FROM 'E:\latihan\SQL\dwh_sql_server_project\datasets\source_crm\cust_info.csv'
 		WITH (
 				FIRSTROW = 2,
 				FIELDTERMINATOR = ',',
@@ -50,7 +50,7 @@ BEGIN
 		TRUNCATE TABLE bronze.crm_prd_info;
 		PRINT '>> Insert Into : bronze.crm_prd_info'
 		BULK insert bronze.crm_prd_info
-		FROM 'E:\latihan\SQL\datawarehouse\datasets\source_crm\prd_info.csv'
+		FROM 'E:\latihan\SQL\dwh_sql_server_project\datasets\source_crm\prd_info.csv'
 		WITH (
 				FIRSTROW = 2,
 				FIELDTERMINATOR = ',',
@@ -65,7 +65,7 @@ BEGIN
 		TRUNCATE TABLE bronze.crm_sales_details;
 		PRINT '>> Insert Into : bronze.crm_sales_details'
 		BULK insert bronze.crm_sales_details
-		FROM 'E:\latihan\SQL\datawarehouse\datasets\source_crm\sales_details.csv'
+		FROM 'E:\latihan\SQL\dwh_sql_server_project\datasets\source_crm\sales_details.csv'
 		WITH (
 				FIRSTROW = 2,
 				FIELDTERMINATOR = ',',
@@ -85,7 +85,7 @@ BEGIN
 		PRINT '>> Insert Into : bronze.erp_cust_az12'
 		BULK insert bronze.erp_cust_az12
 
-		FROM 'E:\latihan\SQL\datawarehouse\datasets\source_erp\cust_az12.csv'
+		FROM 'E:\latihan\SQL\dwh_sql_server_project\datasets\source_erp\cust_az12.csv'
 		WITH (
 				FIRSTROW = 2,
 				FIELDTERMINATOR = ',',
@@ -99,7 +99,7 @@ BEGIN
 		TRUNCATE TABLE bronze.erp_loc_a101;
 		PRINT '>> Insert Into : bronze.erp_loc_a101'
 		BULK insert bronze.erp_loc_a101
-		FROM 'E:\latihan\SQL\datawarehouse\datasets\source_erp\loc_a101.csv'
+		FROM 'E:\latihan\SQL\dwh_sql_server_project\datasets\source_erp\loc_a101.csv'
 		WITH (
 				FIRSTROW = 2,
 				FIELDTERMINATOR = ',',
@@ -113,7 +113,7 @@ BEGIN
 		TRUNCATE TABLE bronze.erp_px_cat_g1v2;
 		PRINT '>> Insert Into : bronze.erp_px_cat_g1v2'
 		BULK insert bronze.erp_px_cat_g1v2
-		FROM 'E:\latihan\SQL\datawarehouse\datasets\source_erp\px_cat_g1v2.csv'
+		FROM 'E:\latihan\SQL\dwh_sql_server_project\datasets\source_erp\px_cat_g1v2.csv'
 		WITH (
 				FIRSTROW = 2,
 				FIELDTERMINATOR = ',',
